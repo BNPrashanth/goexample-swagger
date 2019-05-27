@@ -1,0 +1,17 @@
+get:
+  responses:
+    200:
+      description: OK
+      schema:
+        $ref: './definitions/test.yml'
+post:
+  parameters:
+    - name: test-obj
+      in: body
+      schema:
+        $ref: './definitions/test.yml'
+  responses:
+    200:
+      description: OK
+      schema:
+        $ref: './definitions/test.yml'
